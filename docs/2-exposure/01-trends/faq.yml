@@ -2,13 +2,13 @@ id: x-2-exposure-01-trends
 
 data:
   - name:
-      en: Service exposure over time
-      cn: 服务暴露面的时间走势
+      en: "Service exposure over time"
+      cn: "服务暴露面的时间走势"
     qa:
       - id: is-nginx-winning
         question:
-      en: Is nginx winning?
-      cn: 是 nginx 在赢吗？
+          en: "Is nginx winning?"
+          cn: "是 nginx 在赢吗？"
         answer:
           en: >
             Not necessarily, and the chart does not claim it. nginx sits above apache throughout the window and the gap widens toward 2026 — but both lines fall from their 2022 peaks. The catch is that Shodan's scanning capacity also changes over time, which pushes counts up for reasons unrelated to the software, so any decline is the net of two forces. That is why trends are best read comparatively: two curves measured the same way over the same window are far more trustworthy than one curve's absolute level.
