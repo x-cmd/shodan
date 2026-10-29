@@ -38,7 +38,7 @@
 
 ### overview
 
-- [About this page](docs/1-overview/01-about/en.md)
+- [What Shodan measures, and what this page does with it](docs/1-overview/01-about/en.md)
 
 ### exposure
 
@@ -63,7 +63,7 @@
 
 ### overview
 
-- [关于本页](docs/1-overview/01-about/cn.md)
+- [Shodan 度量的是什么，这个页面拿它做什么](docs/1-overview/01-about/cn.md)
 
 ### exposure
 
