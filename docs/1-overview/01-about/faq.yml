@@ -2,13 +2,13 @@ id: x-1-overview-01-about
 
 data:
   - name:
-      en: What Shodan measures, and what this page does with it
-      cn: Shodan 度量的是什么，这个页面拿它做什么
+      en: "What Shodan measures, and what this page does with it"
+      cn: "Shodan 度量的是什么，这个页面拿它做什么"
     qa:
       - id: what-is-this
         question:
-      en: What is this page?
-      cn: 这个页面是什么？
+          en: "What is this page?"
+          cn: "这个页面是什么？"
         answer:
           en: >
             It is the Shodan query facets, rendered as pictures. Shodan already lets you break any search down by 39 dimensions — country, port, ASN, OS, TLS fingerprint, SSH key, CVE, WAF and more. Those breakdowns come back as JSON, and JSON in an issue or a blog post is something people scroll past. Every figure here is the same breakdown, rendered, with the query left editable in the URL so it can be pointed at your own assets instead.
