@@ -2,13 +2,13 @@ id: x-5-method-01-keyless
 
 data:
   - name:
-      en: The keyless path
-      cn: 免 key 的那条路
+      en: "The keyless path"
+      cn: "免 key 的那条路"
     qa:
       - id: no-api-key
         question:
-      en: Do I need an API key for these?
-      cn: 这些图需要 API key 吗？
+          en: "Do I need an API key for these?"
+          cn: "这些图需要 API key 吗？"
         answer:
           en: >
             Not for the last page. Shodan's internetdb endpoint returns the same per-host structure — ports, hostnames, CPEs, tags, vulns — with no key, no account and no rate-limit negotiation: one curl per IP. That makes it the right tool for a first look at any list of addresses you have just been handed, and it is fifteen lines of jq to turn into a port histogram. Note that a Not Found response means "we have nothing on this host", not "the host is down".
