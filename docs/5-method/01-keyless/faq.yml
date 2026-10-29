@@ -1,0 +1,20 @@
+id: x-5-method-01-keyless
+
+data:
+  - name:
+      en: "The keyless path"
+      cn: "免 key 的那条路"
+    qa:
+      - id: no-api-key
+        question:
+          en: "Do I need an API key for these?"
+          cn: "这些图需要 API key 吗？"
+        answer:
+          en: >
+            Not for the last page. Shodan's internetdb endpoint returns the same per-host structure — ports, hostnames, CPEs, tags, vulns — with no key, no account and no rate-limit negotiation: one curl per IP. That makes it the right tool for a first look at any list of addresses you have just been handed, and it is fifteen lines of jq to turn into a port histogram. Note that a Not Found response means "we have nothing on this host", not "the host is down".
+          cn: >
+            最后一页不需要。Shodan 的 internetdb 端点返回同样的逐主机结构——端口、主机名、CPE、标签、漏洞——不需要 key、不需要账号、不用协商限流：每个 IP 一次 curl。所以拿到任何一份地址清单先扫一遍，它是再合适不过的工具，而且十五行 jq 就能变成一张端口直方图。注意：返回 Not Found 的意思是「我们没有这台主机的信息」，不是「这台机器挂了」。
+        confidence: 10
+        reference:
+          - docs/5-method/01-keyless/en.md
+          - docs/5-method/01-keyless/cn.md

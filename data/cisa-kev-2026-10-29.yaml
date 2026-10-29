@@ -1,0 +1,8 @@
+# CISA Known Exploited Vulnerabilities catalog, pulled with `x kev ls`.
+# source: https://www.cisa.gov/sites/default/files/csv/known_exploited_vulnerabilities.csv
+# as_of: 2026-10-29
+# note:  CISA catalogs 1762 entries; 361 carry knownRansomwareCampaignUse=Known
+
+by_vendor: [{"vendor":"Microsoft","total":390,"ransomware":117},{"vendor":"Cisco","total":101,"ransomware":7},{"vendor":"Apple","total":95,"ransomware":0},{"vendor":"Adobe","total":83,"ransomware":11},{"vendor":"Google","total":76,"ransomware":0},{"vendor":"Oracle","total":46,"ransomware":13},{"vendor":"Apache","total":41,"ransomware":8},{"vendor":"Ivanti","total":36,"ransomware":12},{"vendor":"Linux","total":32,"ransomware":0},{"vendor":"Fortinet","total":32,"ransomware":14},{"vendor":"Citrix","total":27,"ransomware":7},{"vendor":"D-Link","total":26,"ransomware":0}]
+catalog_total: 1762
+ransomware_total: 361

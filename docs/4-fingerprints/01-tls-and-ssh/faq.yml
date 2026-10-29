@@ -1,0 +1,20 @@
+id: x-4-fingerprints-01-tls-and-ssh
+
+data:
+  - name:
+      en: "TLS and SSH fingerprints"
+      cn: "TLS 与 SSH 指纹"
+    qa:
+      - id: jarm-vs-cert
+        question:
+          en: "Why fingerprint the TLS stack when there is already a certificate?"
+          cn: "已经有证书了，为什么还要给 TLS 协议栈做指纹？"
+        answer:
+          en: >
+            Because a certificate says who is presenting, not what is terminating. Many hosts serve a valid certificate from a CDN while still exposing the fingerprint of the proxy in front of it. JARM — an active fingerprint that sends a malformed ClientHello and reads the reaction — tells you how many real implementations sit behind one apparent service, and therefore which advisories apply to each. The SSH fingerprint distribution is the "how many people reuse the same private key" chart, which is both a security finding and a way to count a population.
+          cn: >
+            因为证书说明的是「谁在出示」，不是「谁在终结」。很多主机从 CDN 拿一张合法证书，暴露出来的却仍是前面那个代理的指纹。JARM —— 主动发送畸形 ClientHello 再读回应的指纹方法 —— 能告诉你所谓「一种服务」背后实际有几套实现，因此也知道每个分别适用哪些公告。而 SSH 指纹分布就是「有多少人复用同一把私钥」那张图，既是安全发现，也是给一个群体点数的方式。
+        confidence: 10
+        reference:
+          - docs/4-fingerprints/01-tls-and-ssh/en.md
+          - docs/4-fingerprints/01-tls-and-ssh/cn.md
