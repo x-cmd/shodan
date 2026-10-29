@@ -1,6 +1,10 @@
 # shodan
 
-**The exposed internet, as plain URLs.** Everything Shodan measures about the public internet, turned into charts you can paste anywhere. Every chart below is a [x-cmd draw](https://github.com/x-cmd/draw) URL — the data lives in the link, server-rendered as SVG.
+**The exposed internet, as plain URLs.**
+
+Shodan indexes what is *running* on the internet rather than what pages *say*, and it breaks any search down by 39 facets — country, port, ASN, OS, TLS fingerprint, SSH key, CVE, WAF. Those breakdowns arrive as JSON, and JSON in an issue or a blog post is something people scroll past.
+
+This site renders them. Because a chart here is a URL with the parameters written out, the query is editable: point it at `org:yourcompany` instead of `product:nginx` and the same template becomes a picture of your own attack surface.
 
 > Languages: English · 中文（每页双语；es / ja / de 待补）
 
@@ -36,59 +40,60 @@
 
 ## All pages
 
-### overview
+### Overview · 总览
 
 - [What Shodan measures, and what this page does with it](docs/1-overview/01-about/en.md)
 
-### exposure
+### Exposure · 暴露面
 
 - [Service exposure over time](docs/2-exposure/01-trends/en.md)
 - [Where the exposure is](docs/2-exposure/02-where/en.md)
 - [Ports, networks, operating systems](docs/2-exposure/03-ports-networks-os/en.md)
 
-### vulnerabilities
+### Vulnerabilities · 漏洞
 
 - [Known CVEs still exposed](docs/3-vulnerabilities/01-cve-stock/en.md)
 - [CISA Known Exploited Vulnerabilities](docs/3-vulnerabilities/02-cisa-kev/en.md)
 
-### fingerprints
+### Fingerprints · 指纹
 
 - [TLS and SSH fingerprints](docs/4-fingerprints/01-tls-and-ssh/en.md)
 
-### method
+### Method · 方法
 
 - [The keyless path](docs/5-method/01-keyless/en.md)
 
 ## 中文页
 
-### overview
+### 总览
 
 - [Shodan 度量的是什么，这个页面拿它做什么](docs/1-overview/01-about/cn.md)
 
-### exposure
+### 暴露面
 
 - [服务暴露面的时间走势](docs/2-exposure/01-trends/cn.md)
 - [暴露面在哪里](docs/2-exposure/02-where/cn.md)
 - [端口、网络与操作系统](docs/2-exposure/03-ports-networks-os/cn.md)
 
-### vulnerabilities
+### 漏洞
 
 - [仍在暴露的已知 CVE](docs/3-vulnerabilities/01-cve-stock/cn.md)
 - [CISA 已被利用漏洞目录](docs/3-vulnerabilities/02-cisa-kev/cn.md)
 
-### fingerprints
+### 指纹
 
 - [TLS 与 SSH 指纹](docs/4-fingerprints/01-tls-and-ssh/cn.md)
 
-### method
+### 方法
 
 - [免 key 的那条路](docs/5-method/01-keyless/cn.md)
 
 ## How the charts work
 
-Each figure is a plain `https://x-cmd.com/draw?type=…` URL — rendered to a standalone SVG by [x-cmd/draw](https://github.com/x-cmd/draw). No JS runs on this page, the SVG is static, printable, and AI-readable: the parameters *are* the data, so the same URL can be edited to query something else.
+Every figure is a plain `https://x-cmd.com/draw?type=…` URL — rendered to a standalone SVG by [x-cmd/draw](https://github.com/x-cmd/draw). No JavaScript runs on this page; the SVG is static, printable, and AI-readable, because the parameters *are* the data.
 
-To make your own: run the CLI, then hand the output to draw — or let your AI agent do it with the [draw skill](https://raw.githubusercontent.com/x-cmd/draw/main/SKILL.md).
+To make your own: run `x shodan host count -f <facet> '<query>'` (or `x shodan trend search`), then hand the numbers to draw — or let your AI agent do it with the [draw skill](https://raw.githubusercontent.com/x-cmd/draw/main/SKILL.md).
+
 
 ## Data sources
 
