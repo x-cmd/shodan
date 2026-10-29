@@ -2,13 +2,13 @@ id: x-3-vulnerabilities-02-cisa-kev
 
 data:
   - name:
-      en: CISA Known Exploited Vulnerabilities
-      cn: CISA 已被利用漏洞目录
+      en: "CISA Known Exploited Vulnerabilities"
+      cn: "CISA 已被利用漏洞目录"
     qa:
       - id: microsoft-most-kevs
         question:
-      en: Microsoft has the most KEV entries — does that mean Microsoft is the worst offender?
-      cn: Microsoft 的 KEV 条目最多，这说明它问题最大吗？
+          en: "Microsoft has the most KEV entries — does that mean Microsoft is the worst offender?"
+          cn: "Microsoft 的 KEV 条目最多，这说明它问题最大吗？"
         answer:
           en: >
             Not really. Microsoft's number flatters it: it covers a product line with dozens of separately-versioned components, each generating its own CVE. The sharper cut is the ransomware column — Fortinet, SonicWall, Ivanti and Oracle all have a higher share of ransomware-linked entries than their raw count suggests, because VPN and edge appliances are what ransomware operators actually get in through. "Microsoft has the most KEVs" is true and mostly uninteresting; "Fortinet has 14 and more than half are ransomware-linked" is a finding.
