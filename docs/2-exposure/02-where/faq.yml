@@ -2,13 +2,13 @@ id: x-2-exposure-02-where
 
 data:
   - name:
-      en: Where the exposure is
-      cn: 暴露面在哪里
+      en: "Where the exposure is"
+      cn: "暴露面在哪里"
     qa:
       - id: product-vs-abuse
         question:
-      en: Are the hot countries the same for products and for abuse?
-      cn: 产品和滥用的热门国家是同一批吗？
+          en: "Are the hot countries the same for products and for abuse?"
+          cn: "产品和滥用的热门国家是同一批吗？"
         answer:
           en: >
             No. "Where is the product" and "where is the abuse" are different questions. Exposed nginx concentrates in a few large hosting economies — Hong Kong stands out, because its hosting market is dense with small, cheap, frequently-configured servers. Exposed telnet and RDP concentrate in whichever providers resell access. The first chart is about market structure; the second is about who to block.
