@@ -1,0 +1,8 @@
+# Shodan facet breakdowns, queried 2026-10-29.
+# source: https://api.shodan.io/shodan/host/count  (query + facets)
+# as_of: 2026-10-29
+# note:  counts are Shodan-OBSERVABLE hosts, not totals on the internet
+
+nginx_by_country: [{"value":"US","count":15196466},{"value":"CN","count":9905515},{"value":"HK","count":3917034},{"value":"JP","count":3172078},{"value":"DE","count":2862913}]
+nginx_by_port: [{"value":80,"count":11430376},{"value":443,"count":10007657},{"value":888,"count":465184},{"value":5000,"count":453353},{"value":5001,"count":435349}]
+cve_exposure: [{"cve":"CVE-2018-15473","hosts":15003226},{"cve":"CVE-2023-44487","hosts":9897254},{"cve":"CVE-2022-0778","hosts":764410},{"cve":"CVE-2017-5638","hosts":113646},{"cve":"CVE-2014-0160","hosts":71890},{"cve":"CVE-2019-0708","hosts":13212},{"cve":"CVE-2020-1472","hosts":431},{"cve":"CVE-2021-26855","hosts":669},{"cve":"CVE-2022-22965","hosts":44},{"cve":"CVE-2023-34362","hosts":9},{"cve":"CVE-2021-44228","hosts":3},{"cve":"CVE-2023-4863","hosts":3}]
