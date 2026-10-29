@@ -2,13 +2,13 @@ id: x-2-exposure-03-ports-networks-os
 
 data:
   - name:
-      en: Ports, networks, operating systems
-      cn: 端口、网络与操作系统
+      en: "Ports, networks, operating systems"
+      cn: "端口、网络与操作系统"
     qa:
       - id: odd-ports
         question:
-      en: Why do so many nginx hosts run on port 8880 or 8443?
-      cn: 为什么这么多 nginx 跑在 8880 或 8443 这种端口上？
+          en: "Why do so many nginx hosts run on port 8880 or 8443?"
+          cn: "为什么这么多 nginx 跑在 8880 或 8443 这种端口上？"
         answer:
           en: >
             Those are not random choices — 8880 and 8443 are the defaults of specific panels and proxy stacks. A non-standard port in front of nginx is usually a tunnel or a management panel, which means the port alone identifies the stack before you ever connect. That is why port distributions are worth charting rather than listing: a port distribution is a fingerprint of a population's deployment practices, and deployment practices map to attack surface.
