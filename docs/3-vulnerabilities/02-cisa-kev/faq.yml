@@ -11,9 +11,9 @@ data:
       cn: Microsoft 的 KEV 条目最多，这说明它问题最大吗？
         answer:
           en: >
-            Not really. Microsoft's number flatters it: it covers a product line with dozens of separately-versioned components, each generating its own CVE. The sharper cut is the ransomware column — Fortinet, SonicWall, Ivanti and Oracle all have a higher share of ransomware-linked entries than their raw count suggests, because VPN and edge appliances are what ransomware operators actually get in through.
+            Not really. Microsoft's number flatters it: it covers a product line with dozens of separately-versioned components, each generating its own CVE. The sharper cut is the ransomware column — Fortinet, SonicWall, Ivanti and Oracle all have a higher share of ransomware-linked entries than their raw count suggests, because VPN and edge appliances are what ransomware operators actually get in through. "Microsoft has the most KEVs" is true and mostly uninteresting; "Fortinet has 14 and more than half are ransomware-linked" is a finding.
           cn: >
-            未必。这个数字对微软反而是美化的：它覆盖的是一条有几十个独立版本组件的产品线，每个组件都自己开一堆 CVE。更锋利的切法是勒索软件那一列——Fortinet、SonicWall、Ivanti、Oracle 的勒索软件关联占比都高于其总数所暗示的比例，因为 VPN 和边缘设备才是勒索软件团伙真正进来的门。
+            未必。这个数字对微软反而是美化的：它覆盖的是一条有几十个独立版本组件的产品线，每个组件都自己开一堆 CVE。更锋利的切法是勒索软件那一列——Fortinet、SonicWall、Ivanti、Oracle 的勒索软件关联占比都高于其总数所暗示的比例，因为 VPN 和边缘设备才是勒索软件团伙真正进来的门。「Microsoft 的 KEV 最多」为真但基本没意思；「Fortinet 有 14 条且一半以上与勒索软件相关」才是一个发现。
         confidence: 10
         reference:
           - docs/3-vulnerabilities/02-cisa-kev/en.md
