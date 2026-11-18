@@ -1,0 +1,26 @@
+# Website sidebar group config for this directory. Nested groups use their own _sidebar.yml.
+# @property {string} <icon> - Required. UnoCSS icon class, e.g. i-lucide:store.
+#   - Lucide icon names: curl -fsSL https://cdn.jsdelivr.net/npm/lucide-static@latest/icon-nodes.json | jq -r 'keys[]'
+# @property {Record<string, string>} <text> - Required. Localized group names (plain text).
+
+<icon>: i-lucide:fingerprint
+<text>:
+  en: Fingerprints
+  zh: 指纹
+  cs: Otisky
+  de: Fingerabdrücke
+  es: Huellas
+  fr: Empreintes
+  id: Sidik jari
+  it: Impronte
+  ja: フィンガープリント
+  ko: 핑거프린트
+  pl: Odciski
+  ro: Amprente
+  ru: Отпечатки
+  th: ลายนิ้วมือ
+  tr: Parmak izleri
+  uk: Відбитки
+  vi: Dấu vân tay
+  pt-br: Impressões digitais
+  pt-pt: Impressões digitais

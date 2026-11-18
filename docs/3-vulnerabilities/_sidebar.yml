@@ -1,0 +1,26 @@
+# Website sidebar group config for this directory. Nested groups use their own _sidebar.yml.
+# @property {string} <icon> - Required. UnoCSS icon class, e.g. i-lucide:store.
+#   - Lucide icon names: curl -fsSL https://cdn.jsdelivr.net/npm/lucide-static@latest/icon-nodes.json | jq -r 'keys[]'
+# @property {Record<string, string>} <text> - Required. Localized group names (plain text).
+
+<icon>: i-lucide:shield-alert
+<text>:
+  en: Vulnerabilities
+  zh: 漏洞
+  cs: Zranitelnosti
+  de: Schwachstellen
+  es: Vulnerabilidades
+  fr: Vulnérabilités
+  id: Kerentanan
+  it: Vulnerabilità
+  ja: 脆弱性
+  ko: 취약점
+  pl: Podatności
+  ro: Vulnerabilități
+  ru: Уязвимости
+  th: ช่องโหว่
+  tr: Güvenlik açıkları
+  uk: Вразливості
+  vi: Lỗ hổng
+  pt-br: Vulnerabilidades
+  pt-pt: Vulnerabilidades

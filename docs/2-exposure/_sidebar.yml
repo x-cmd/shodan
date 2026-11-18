@@ -1,0 +1,26 @@
+# Website sidebar group config for this directory. Nested groups use their own _sidebar.yml.
+# @property {string} <icon> - Required. UnoCSS icon class, e.g. i-lucide:store.
+#   - Lucide icon names: curl -fsSL https://cdn.jsdelivr.net/npm/lucide-static@latest/icon-nodes.json | jq -r 'keys[]'
+# @property {Record<string, string>} <text> - Required. Localized group names (plain text).
+
+<icon>: i-lucide:radar
+<text>:
+  en: Exposure
+  zh: 暴露面
+  cs: Expozice
+  de: Exposition
+  es: Exposición
+  fr: Exposition
+  id: Eksposur
+  it: Esposizione
+  ja: 露出
+  ko: 노출
+  pl: Ekspozycja
+  ro: Expunere
+  ru: Экспозиция
+  th: การเปิดเผย
+  tr: Maruziyet
+  uk: Експозиція
+  vi: Phơi nhiễm
+  pt-br: Exposição
+  pt-pt: Exposição
